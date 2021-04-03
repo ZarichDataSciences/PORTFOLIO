@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.9rem;
+}
+/*Disable smooth scrolling when users have prefers-reduced-motion enabled*/
+ @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/* -------NAV BAR------- */
+.navbar {
+    height: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: 600ms ease-in;
+}
+.navbar.scrolled {
+    background-color: #bdaa6a;
+    border-bottom: 0.1px solid #bdaa6a;
+}
+.navbar-brand img {
+    height: 2.5rem;
+    transition: 2s linear;
+}
+.navbar-brand:hover {
+    transform: scale(1.3);
+}
+.nav-link {
+    color: white !important;
+    opacity: 80%
+}
+.nav-link:hover {
+    font-weight: bold;
+    opacity: 65%;
+}
+.nav-link.active {
+  color: gray !important;
+  font-weight: bold;
+}
+
+/*mobile navbar background color*/
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        background-color: white !important;
+    }
+}
+
+
+/*-------LANDING PAGE-------*/
+.hero {
+    background-image: url(assets/heroImage.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/*-----Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed-----*/
+@media only screen and (max-width: 768px) {
+    .hero {
+      background-attachment: scroll;
+    }
+}
+
+.hero-content {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------ABOUT ME------- */
+.padding {
+    padding: 80px 0;
+}
+
+.padding img {
+    width: 100%;
+}
+
+.about-me-link {
+    color: black;
+    font-weight: bold;
+    opacity: 75%;
+}
+
+.about-me-link:hover {
+    color: #ADD8E7;
+    text-decoration: none;
+}
+
+
+/* -------SKILLS------- */
+.jumbotron {
+    background-color: black;
+    opacity: 80%;
+    border: 1px solid black;
+}
+.skills-header{
+    color: lightgray;
+}
+
+.list-inline li i {
+    color: white;
+    font-size: 3rem;
+    opacity: 60%;
+}
+
+.list-inline li i:hover {
+    color: orange;
+}
+
+.github-list-link {
+    color: white;
+}
+
+.github-list-link:hover {
+    color: orange;
+}
+
+.skills-text {
+    color: lightslategray;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+
+/* -------DIVIDER-------*/
+.divider {
+    background-color: white;
+    background-image: url(assets/dividerImg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+/*-----Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed-----*/
+@media only screen and (max-width: 768px) {
+    .divider {
+      background-attachment: scroll;
+    }
+}
+
+.divider-overlay {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.divider-content {
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-caption p {
+    font-size: 2rem;
+    text-shadow: 5px 5px 4px gray;
+}
+
+
+/* -------PROJECTS------- */
+.card-title {
+    color: rgb(57, 140, 158);
+}
+
+.card {
+    transition: .2s linear;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 10px 10px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* -------PROJECT GRID RESPONSIVE BREAKPOINTS------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .card-img-top {
+        width: 100%;
+        height: 45vh;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-img-top {
+        width: 100%;
+        height: 36vw;
+        object-fit: cover;
+    }
+}
+
+/* Lg devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card-img-top {
+        /* width: 100%; */
+        height: 25vw;
+        object-fit: cover;
+    }
+}
+
+/* XL devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card-img-top {
+        /* width: 100%; */
+        height: 25vw;
+        object-fit: cover;
+    }
+}
+
+/* XL devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .card-img-top {
+        /* width: 100%; */
+        height: 15vw;
+        object-fit: cover;
+    }
+}
+
+/* -------CONTACT FORM-------*/
+.container h2 {
+    padding-top: 3rem;
+}
+
+form {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/*-------FOOTER-------*/
+.footer {
+    background-color: black;
+    opacity: 80%;
+    border-top: .1rem solid lightgray;
+}
+
+.linkedin-footer-link, .github-footer-link {
+    color: lightgray;
+    /* opacity: 88%; */
+}
+
+.linkedin-footer-link:hover, .github-footer-link:hover {
+    color: orange;
+}
+
+.copy-link {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.copy-link:hover {
+    color: orange;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Zarich's Portfolio</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/teslaCoilFavicon.png"/>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand mr-auto" href="#about">
+                <img src="assets/JupiterLogo.png" alt="Logo" class="pl-3">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link pl-3" href="#resume">Software Engineer / Network Engineer</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link p-3" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link p-3" href="#about">About</a>
+                    <a class="nav-link p-3" href="#skills">Skills</a>
+                    <a class="nav-link p-3" href="#resume">Resume</a>
+                    <a class="nav-link p-3" href="#projects">Projects</a>
+                    <a class="nav-link p-3" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO LANDING PAGE -->
+    <div class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="caption text-center">
+                    <!-- <img src="assets/heroImage.jpg" alt="Hero Logo" class="img-fluid"> -->
+                    <h1>Some call me...</h1>
+                    <h1 class="display-1">Nathan Zarich</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <article class="padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 my-md-auto">
+                    <img src="assets/TempMePic.jpg" class="img-fluid rounded" alt="Responsive image Nathan">
+                </div>
+                <div class="col-md-6 ml-auto text-justify">
+                    <p class="lead mt-4">A brief history of IT time and space for me begins in 1999 when I began an internship in PC support. In time I became a server and network engineer. This lasted for seven years when a radical and new calling began; I trained to become a line flight attendant. What a wonderful and fanciful ride the past fifteen years have been. But, like for most, the COVID-19 pandemic ground my industry to a halt, and I found myself not only desiring my IT career again, but looking for new educational opportunites to tune up my skills and position me for success.
+                    <br>
+                    <br>
+                    To accomplish this I enrolled at ElevenFiftyAcademy in their software development program. At the same time I enrolled in Ivy Tech's network security program. Currently I'm studying and working with C# .NET and Cisco Systems to create a unique and powerful IT combination of skills. My goal is to pursue my CompTIA Network+, Security+ and Cisco CCNA as well as continue my studies in C# and .NET ecosystem. I also study and enjoy Linux and backend server infrastructures. 
+
+                    Find out more about me <a href="https://www.linkedin.com/in/nathanzarich/" target="blank"  class="about-me-link text-muted">LinkedIn.</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- SKILLS LIST -->
+    <div class="jumbotron mb-0" id="skills">
+        <h1 class="skills-header display-4 text-center">SKILLS</h1>
+        <hr class="my-4">
+        <ul class="list-inline list-unstyled text-center">
+            <li class="list-inline-item col-sm-2 col-md-2">
+                <p class="skills-text">Microsoft .NET</p>
+            </li>
+            <li class="list-inline-item col-sm-2 col-md-2">
+                <p class="skills-text">C#</p>
+            </li>
+            <li class="list-inline-item col-sm-2 col-md-2">
+                <p class="skills-text">Cisco Systems</p>
+            </li>
+            <li class="list-inline-item col-sm-2 col-md-2">
+                <p class="skills-text">bootstrap</p>
+            </li>
+            <li class="list-inline-item col-sm-2 col-md-2">
+                <a href="https://github.com/ZarichDataSciences" target="blank" class="github-list-link"><p class="skills-text">github</p></a>
+            </li>
+        </ul>
+        <hr class="my-4">
+    </div>
+
+    <!-- PARALLAX SCROLLING DIVIDER -->
+    <div class="divider" id="resume">
+        <div class="divider-overlay">
+            <div class="divider-content">
+                <div class="divider-caption text-center">
+                    <p class="lead">Download my resume, and be sure to check out my portfolio below.</p>
+                    <br>
+                    <a class="btn btn-outline-light btn-lg text-uppercase" href="ADD YOUR RESUME, NZ"  target="blank" role="button">resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS GRID -->
+    <div class="container pt-3" id="projects">
+        <!-- HEADING -->
+        <h1 class="my-4 text-center">Portfolio of Projects
+            <!-- <small>Secondary Text</small> -->
+        </h1>
+        <br>
+        <!-- GRID -->
+        <div class="row row-cols-md-2">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <a href="https://codepen.io/IndyNate/pen/BaLgeMx" target="blank"><img class="card-img-top img-thumbnail" src="assets/alien.png" alt="Flying alien created with HTML and CSS only"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">CSS Creature</h4>
+                        <p class="card-text">A Codepen alien I created using only HTML and CSS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <a href="https://zarichdatasciences.github.io/SD76_StaticStorefront/" target="blank"><img class="card-img-top img-thumbnail" src="assets/StaticFront.png" alt="Static Layout Project"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Static Storefront Website</h4>
+                        <p class="card-text">A representation of a static storefront website using only HTML, CSS and BootStrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <a href="https://github.com/ZarichDataSciences" target="blank"><img class="card-img-top img-thumbnail" src="assets/ZarichDataSciencesGitHub.png" alt="Link to ZarichDataSciences github"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Zarich Data Sciences GitHub</h4>
+                        <p class="card-text">My GitHub Repository </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top img-thumbnail" src="assets/ComingSoon01.jpg" alt="Coming Soon Image Placeholder"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Blue Badge Group Project</h4>
+                        <p class="card-text">Coming Soon...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <img class="card-img-top img-thumbnail" src="assets/ComingSoon02.jpg" alt="Screenshot of The Bar Cart App"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Red Badge Solo Project</h4>
+                        <p class="card-text">Coming Soon...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top img-thumbnail" src="assets/ComingSoon03.jpg" alt="Coming Soon Image Placeholder"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Something Very Exciting for All!</h4>
+                        <p class="card-text">Coming soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <hr>
+    <div class="container form" id="contact">
+        <h2 class="text-center">Get in Touch</h2>
+        <form action="https://formspree.io/f/mrgrzvkz" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" name="name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" name="_replyto">
+            </div>
+            <div class="form-group">
+                <textarea name="message" class="form-control" rows='7' placeholder="Message"></textarea>
+            </div>
+        <!-- your other form fields go here -->
+            <button type="submit" class="btn btn-outline-dark btn-md text-uppercase">Send</button>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-light text-center py-3">
+        <div class="container text-center">
+            <ul class="list-inline list-unstyled text-center">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/nathanzarich/" target="blank" class="linkedin-footer-link"><i class="fab fa-linkedin my-4"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/ZarichDataSciences" target="blank" class="github-footer-link"><i class="fab fa-github-square my-4"></i></a>
+                </li>
+            </ul>
+            <p class="copyright">
+                <a class="copy-link scroll top text-muted" href="#">&copy Nathan Zarich 2021</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- MY SCRIPTS -->
+    <script src="./portfolio.js"></script>
+
+</body>
+</html>
